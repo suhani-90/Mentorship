@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Time Slot Management</title>
+    <link rel="stylesheet" href="css/faculty.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="images/birmohan.jpg" alt="Dr. John Doe">
+            <div>
+                <h1>Dr. John Doe</h1>
+                <p>Expertise: Artificial Intelligence</p>
+                <p>Experience: 10 years</p>
+            </div>
+        </div>
+        
+        <h2>Manage Time Slots:</h2>
+        <div id="timeSlots" class="time-slots"></div>
+        
+        <div class="add-slot">
+            <select id="startHour"></select>
+            <select id="startMinute"></select>
+            <select id="startAmPm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <span>to</span>
+            <select id="endHour"></select>
+            <select id="endMinute"></select>
+            <select id="endAmPm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+
+            <div id="errorMessage" style="color: red; display: none;"></div>
+            <button class="add-btn" onclick="addTimeSlot()">Add Slot</button>
+        </div>
+    </div>
+    <script src="js/faculty.js"></script>
+</body>
+</html>

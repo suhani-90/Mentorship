@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+   margin:50px;
+   max-width: 80%;
+}
+
+/* Mentor Card Styling */
+.mentor-card {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.mentor-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Rounded Image Styling */
+.mentor-image-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.mentor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mentor Info Styling */
+.mentor-info {
+    padding: 10px 0;
+}
+
+.mentor-name {
+    font-size: 1.4rem;
+    color: #023047; /* Dark Navy Blue */
+    margin-bottom: 8px;
+}
+
+.mentor-bio {
+    font-size: 1rem;
+    color: #219EBC; /* Medium Sky Blue */
+    margin-bottom: 15px;
+}
+
+
+/* Book Button Styling */
+.book-btn {
+    background-color: #FB8500; /* Deep Orange */
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #FFB703; /* Bright Yellow/Orange */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width:100%; /* Full width */
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 80%; /* Increase the width */
+    font-size: 1rem;
+}
+
+.search-bar::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+.search-btn {
+    background-color: #FB8500; /* Deep Orange */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.search-btn:hover {
+    background-color: #FFB703; /* Bright Yellow/Orange */
+}
+
+.profiles{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    gap:2rem;
+
+}
