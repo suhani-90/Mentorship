@@ -1,4 +1,4 @@
-const subjects = ["DBMS", "OOP", "AI", "Blockchain", "Cybersecurity"];
+const subjects = ["DBMS", "OOP", "AI", "BLOCKCHAIN", "NETWORKING"];
 let subjectIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
