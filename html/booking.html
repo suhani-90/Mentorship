@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty Profiles</title>
-    <link rel="stylesheet" href="css/booking.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
     <header>
-        <h1>Faculty Profiles</h1>
-    </header>
-    <main id="faculty-list">
-        <!-- Faculty profiles will be dynamically inserted here -->
-    </main>
+        <div class="header-container">
+          <div class="logo">
+            <a href="#"><h1>SLIET Mentorship</h1></a>
+          </div>
+          <nav>
+            <ul class="nav-links">
+                <li><a href="../html/header.html"><span class="material-icons">home</span> Home</a></li>
+          <li><a href="../html/profiles.html"><span class="material-icons">school</span> Mentors</a></li>
+            <li><a href="#about"><span class="material-icons">info</span> About</a></li>
+            <li><a href="#footer"><span class="material-icons">mail</span> Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
     <div id="booking-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -26,6 +38,34 @@
             </ul>
         </div>
     </div>
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>SLIET Mentorship Platform</h3>
+        <p>Connecting students with mentors for academic and career guidance.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="../html/header.html"><span class="material-icons">home</span> Home</a></li>
+            <li><a href="../html/profiles.html"><span class="material-icons">school</span> Mentors</a></li>
+              <li><a href="#about"><span class="material-icons">info</span> About</a></li>
+              <li><a href="#footer"><span class="material-icons">mail</span> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: support@slietmentorship.com</p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SLIET Mentorship | All Rights Reserved</p>
+    </div>
+  </footer>
+
     <script src="js/booking.js"></script>
 </body>
 </html>

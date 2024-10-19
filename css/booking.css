@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -7,56 +8,116 @@ body {
   color: #023047;
 }
 
-header {
-  background-color: #219EBC;
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-#faculty-list {
+/* Search container styles */
+.search-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 2rem;
+  margin: 30px auto;
+  max-width: 600px;
 }
 
-.faculty-card {
-  background-color: #fff;
-  border:none;
-  color:#219EBC;
-  border-radius: 5px;
-  margin: 1rem;
-  padding: 1rem;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.search-bar {
+  flex-grow: 1;
+  height: 44px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
 }
 
-.faculty-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.book-slot-btn {
-  background-color: #FB8500; /* Deep Orange */
-  color: #FFF;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
+.search-btn {
+  height: 46px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ffb703;
+  border: 1px solid #ffb703;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.book-slot-btn:hover {
-  background-color: #FFB703;
-  color: #fff;
+.search-btn:hover {
+  background-color: #ffb703;
 }
 
+/* Ensure proper alignment on smaller screens */
+@media (max-width: 480px) {
+  .search-container {
+      flex-direction: column;
+  }
+
+  .search-bar,
+  .search-btn {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+  }
+
+  .search-bar {
+      margin-bottom: 10px;
+  }
+}
+    
+
+
+
+/* Mentor cards styling */
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mentor-card {
+  background-color: #feffff; /* Blue */
+  color: rgb(15, 1, 1);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.mentor-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.mentor-bio {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Book Button Styles */
+.book-btn {
+  background-color: #ffb703; /* Deep Yellow */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #fb8500; /* Orange */
+}
+
+/* Modal styling */
 .modal {
   display: none;
   position: fixed;
@@ -65,18 +126,24 @@ header {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #8ECAE6;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 5px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .close {
@@ -84,62 +151,11 @@ header {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-  color: #023047;
-}
-
-#faculty-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-#time-slots {
-  list-style-type: none;
-  padding: 0;
-}
-
-#time-slots li {
-  margin-bottom: 0.5rem;
-  background-color: #8ECAE6;
-  padding: 0.5rem;
-  border-radius: 5px;
-  color: #023047;
-}
-
-.book-time-slot {
-  background-color: #FFB703;
-  border: none;
-  color: #023047;
-  padding: 0.25rem 0.5rem;
-  text-align: center;
+  color: black;
   text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin-left: 1rem;
   cursor: pointer;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.book-time-slot:hover {
-  background-color: #FB8500;
-  color: #fff;
-}
-
-h2, h3 {
-  color: #023047;
-}
-
-#faculty-info {
-  color: #023047;
-  padding: 0.5rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
 }
