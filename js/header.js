@@ -1,4 +1,4 @@
-const subjects = ["DBMS", "OOP", "AI", "Blockchain", "Cybersecurity"];
+const subjects = ["DBMS", "OOP", "AI", "BLOCKCHAIN", "NETWORKING"];
 let subjectIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -31,3 +31,18 @@ function typeText() {
 
 // Start the typewriter effect
 typeText();
+
+    let slideIndex = 0;
+
+    function showSlides() {
+        const slides = document.querySelectorAll('.slide');
+        slideIndex = (slideIndex + 1) % slides.length; // Loop back to first slide
+
+        const carousel = document.querySelector('.slides');
+        carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+
+    // Change slides every 3 seconds
+    setInterval(showSlides, 3000);
+
+
