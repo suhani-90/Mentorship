@@ -20,7 +20,7 @@ a {
 header {
   background-color: #023047;
   color: #fff;
-  padding: 20px 0;
+  padding: 0 0;
 }
 
 .header-container {
@@ -33,6 +33,33 @@ header {
   font-size: 24px;
   font-weight: bold;
 }
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;/* Dark blue from the palette */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #219ebc; /* Black for icons */
+  vertical-align: middle;
+}
+
 
 nav ul {
   list-style: none;
@@ -57,8 +84,7 @@ nav ul li a:hover {
   text-align: center;
   font-family: Arial, sans-serif;
   text-align: center;
-    padding: 100px 0;
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .banner-content {
@@ -162,7 +188,7 @@ nav ul li a:hover {
 }
 /* Middle Content Section */
 .middle-content {
-  padding: 80px 20px;
+  padding: 40px 20px;
   background-color: #f5f5f5; /* NO FILL for Background */
   text-align: center;
 }
@@ -174,6 +200,7 @@ nav ul li a:hover {
   color: #023047; /* Dark Blue for Text */
 }
 
+/* Features Section Styling */
 .features {
   display: flex;
   justify-content: space-between;
@@ -190,6 +217,13 @@ nav ul li a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
   text-align: center;
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Icon Styling */
+.feature-item span.material-icons {
+  font-size: 40px;
+  color: #023047; /* Medium Blue for Icons */
+  margin-bottom: 10px;
 }
 
 /* Feature Heading */
@@ -211,6 +245,7 @@ nav ul li a:hover {
   border-color: #ffb703; /* Yellow Border Highlight */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced Shadow */
 }
+
 
 /* Section Heading */
 .middle-content h2 {
