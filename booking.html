@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <header>
+        <h1>Booking for mentorship</h1>
+    </header>
+
+    <!-- Add Mentor Button on the booking page -->
+    <div class="button-container">
+        <button id="add-mentor-button">Add Mentor</button>
+    </div>
+
+    <!-- Mentor list where the flashcards will appear -->
+    <main id="mentor-list">
+        <!-- Mentor profiles (flashcards) will be dynamically inserted here -->
+    </main>
+
+    <!-- Modal for mentor details -->
+    <div id="mentor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="mentor-name"></h2>
+            <img id="mentor-image" src="" alt="Mentor Image">
+            <p id="mentor-info"></p>
+            <p id="mentor-experience"></p>
+            <h3>Available Time Slots:</h3>
+            <ul id="mentor-slots">
+                <!-- Time slots will be inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>

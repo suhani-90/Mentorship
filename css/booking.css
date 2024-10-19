@@ -1,0 +1,110 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8ecae6;
+  color: #023047;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button#add-mentor-button {
+  background-color: #ffb703;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button#add-mentor-button:hover {
+  background-color: #fb8500;
+}
+
+/* Mentor cards styling */
+#mentor-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mentor-card {
+  background-color: #219ebc;
+  color: white;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+button.view-details {
+  background-color: #ffb703;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.view-details:hover {
+  background-color: #fb8500;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
